@@ -1,0 +1,26 @@
+/* Navbar base style */
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* make it horizontal */
+  gap: 1.5em;     /* space between links */
+  background-color: #f4f4f4;
+  padding: 1em;
+  justify-content: center; /* center the nav bar */
+}
+
+/* Navbar links */
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar li a:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
