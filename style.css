@@ -241,3 +241,8 @@ form button:hover {
 
   flex: 1; /* Makes text take remaining space */
 }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
