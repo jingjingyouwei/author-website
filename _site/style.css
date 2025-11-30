@@ -67,7 +67,7 @@ html {
 }
 
 .story-list > li {
-  margin-bottom: 1.7em; 
+  margin-bottom: 1.7em;
 }
 
 /* Main story link */
@@ -105,7 +105,7 @@ html {
 }
 
 .story-list li p {
-  color: #444; 
+  color: #444;
 }
 
 /* Sub-list under each story (keep bullets) */
@@ -201,22 +201,22 @@ form textarea {
 
 form button {
   align-self: start;
-  background: #0055cc; 
+  background: #0055cc;
   color: white;
   border: none;
-  font-size: 1rem; 
-  font-weight: 500; 
+  font-size: 1rem;
+  font-weight: 500;
   font-family: inherit;
 
-  padding: 0.55em 1.1em; 
-  border-radius: 4px; 
+  padding: 0.55em 1.1em;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.25s ease;
-  letter-spacing: 0.3px; 
+  letter-spacing: 0.3px;
 }
 
 form button:hover {
-  background-color: #003e99; 
+  background-color: #003e99;
 }
 
 /* IMAGE */
@@ -227,20 +227,17 @@ form button:hover {
   align-items: center;
   gap: 3em;
   padding: 20px;
-}
-
-.image-container img {
-  width: 250px;         /* adjust size */
-  height: 250px;        /* keep width = height for perfect circle */
-  border-radius: 50%;   /* makes it circular */
-  object-fit: cover;    /* crops image nicely if it's not perfectly square */
-  display: block;
-  display: flex;
   flex-direction: column;
 }
 
-.bio-text-block {
-
-  flex: 1; /* Makes text take remaining space */
+.image-container img {
+  width: 250px; /* adjust size */
+  height: 250px; /* keep width = height for perfect circle */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover; /* crops image nicely if it's not perfectly square */
+  display: block;
 }
 
+.bio-text-block {
+  flex: 1; /* Makes text take remaining space */
+}
