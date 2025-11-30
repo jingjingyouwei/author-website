@@ -235,6 +235,8 @@ form button:hover {
   border-radius: 50%;   /* makes it circular */
   object-fit: cover;    /* crops image nicely if it's not perfectly square */
   display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .bio-text-block {
@@ -242,7 +244,3 @@ form button:hover {
   flex: 1; /* Makes text take remaining space */
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-}
