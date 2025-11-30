@@ -1,5 +1,6 @@
 html {
   font-size: 18px; /* this affects all rem-based units */
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Navbar container */
@@ -59,14 +60,14 @@ html {
 .story-list {
   list-style: none;
   padding-left: 0;
-  margin: 2em auto;       /* centers the UL itself */
-  max-width: 800px;       /* limits width for readability */
+  margin: 2em auto; /* centers the UL itself */
+  max-width: 800px; /* limits width for readability */
   width: 100%;
-  text-align: left;       /* keeps content inside left-aligned */
+  text-align: left; /* keeps content inside left-aligned */
 }
 
 .story-list > li {
-  margin-bottom: 1.7em; /* increase from 2em or whatever it was */
+  margin-bottom: 1.7em; 
 }
 
 /* Main story link */
@@ -91,8 +92,6 @@ html {
   text-decoration: none;
 }
 
-
-
 /* Hover like navbar */
 .story-list > li > a[href]:hover {
   text-decoration: underline;
@@ -106,19 +105,18 @@ html {
 }
 
 .story-list li p {
-  color: #444; /* darker gray to match bullet points */
+  color: #444; 
 }
 
 /* Sub-list under each story (keep bullets) */
 .story-list ul {
-    
   padding-left: 1.2em;
   list-style-type: disc;
 }
 
 /* Sub-list items */
 .story-list ul li {
-    list-style: none;
+  list-style: none;
   font-size: 0.95em;
   margin-bottom: 0.4em;
   color: #444;
@@ -134,7 +132,7 @@ html {
 }
 
 .story-list ul li::before {
-  content: "–";           /* en dash character */
+  content: "–"; /* en dash character */
   left: 0;
   color: #666;
   font-weight: bold;
@@ -153,7 +151,93 @@ h1 {
   font-weight: 700;
   color: #2b2b2b;
   text-align: center;
-  margin-top: 1.5em;  /* adds space below fixed navbar */
+  margin-top: 1.5em; /* adds space below fixed navbar */
   margin-bottom: 1em;
   letter-spacing: 0.5px;
+}
+
+/* ====================== */
+/* Email / Contact Form   */
+/* ====================== */
+
+.form-container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.form-container h2 {
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #2b2b2b;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+form input,
+form textarea {
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  color: #333;
+  background: #fff;
+}
+
+form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+form button {
+  align-self: start;
+  background: #0055cc; 
+  color: white;
+  border: none;
+  font-size: 1rem; 
+  font-weight: 500; 
+  font-family: inherit;
+
+  padding: 0.55em 1.1em; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  letter-spacing: 0.3px; 
+}
+
+form button:hover {
+  background-color: #003e99; 
+}
+
+/* IMAGE */
+.image-container {
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 250px;         /* adjust size */
+  height: 250px;        /* keep width = height for perfect circle */
+  border-radius: 50%;   /* makes it circular */
+  object-fit: cover;    /* crops image nicely if it's not perfectly square */
+  display: block;
+}
+
+.bio-text-block {
+
+  flex: 1; /* Makes text take remaining space */
 }
