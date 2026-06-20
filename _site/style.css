@@ -241,3 +241,18 @@ form button:hover {
 .bio-text-block {
   flex: 1; /* Makes text take remaining space */
 }
+
+/* for links in story descriptions, below the blurb */
+p a[href]:hover{
+text-decoration: underline;
+  color: #003399;
+}
+
+p a {
+  color: #0055cc;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
